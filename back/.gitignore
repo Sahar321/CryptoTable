@@ -6,6 +6,7 @@
 .pnp.js
 tokenData.json
 data.json
+.vscode
 # testing
 /coverage
 
