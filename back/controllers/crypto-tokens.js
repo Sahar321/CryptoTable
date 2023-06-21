@@ -46,7 +46,7 @@ const extractTokenProperties = ({ Data }) => {
   });
 };
 
-const getExtractedData = (req, res, next) => {
+const  getTokenData= (req, res, next) => {
   res.send(extractedData);
 };
 const getTokenById = (req, res, next) => {
@@ -55,4 +55,4 @@ const getTokenById = (req, res, next) => {
 
 getCryptoTokens();
 
-module.exports = { getExtractedData, getTokenById };
+module.exports = { getTokenData, getTokenById };
