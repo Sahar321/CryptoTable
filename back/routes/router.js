@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const cryptoTokens = require('../middleware/cryptoDataValidation');
+const crypto = require('./crypto');
 
-router.all('/data/crypto*', cryptoTokens    );
+router.all('/crypto*', crypto);
 
 router.all('*', (req, res, next) => {
   res.send('not found');
